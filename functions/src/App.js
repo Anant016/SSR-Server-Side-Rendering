@@ -13,7 +13,7 @@ function App(props) {
   var facts = props.facts.map(function (fact, i) {
     return /*#__PURE__*/_react["default"].createElement("li", {
       key: i
-    }, fact.text);
+    }, fact.name, " ", /*#__PURE__*/_react["default"].createElement("br", null), fact.reward);
   });
   return /*#__PURE__*/_react["default"].createElement("ul", null, facts);
 }
